@@ -16,5 +16,10 @@ namespace AulasPOO.uteis
         {
             return num1 * num2;
         }
+
+        public static float IMC(float peso, float altura)
+        {
+            return (peso / (altura * altura));
+        }
     }
 }
