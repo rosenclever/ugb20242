@@ -37,3 +37,8 @@ void LerDoisNumerosInteiros()
     Console.WriteLine("Informe o segundo número:");
     num2 = int.Parse(Console.ReadLine());
 }
+
+/*
+ * Na pasta úteis crie uma classe chamada Sorteador que será capaz de sortear os nomes existentes em um vetor de nomes. A cada nome sorteado ele será armazenado em lista de nomes sorteados. Ao final imprimir o Lista Original e a nova Lista com os nomes sorteados.
+ * Crie o respectivo código de teste para a classe Sorteador
+ */
