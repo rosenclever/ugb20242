@@ -7,6 +7,7 @@ do
     Console.WriteLine("1) Somar");
     Console.WriteLine("2) Multiplicar");
     Console.WriteLine("3) Fatorial");
+    Console.WriteLine("4) Sorteador");
     Console.WriteLine("0) Sair");
     opcao = Convert.ToInt32(Console.ReadLine());
     switch (opcao)
@@ -23,6 +24,23 @@ do
         case 2:
             LerDoisNumerosInteiros();
             Console.WriteLine($"O resultado da multiplicação de {num1} por {num2} é {Calculadora.Multiplica(num1, num2)}");
+            break;
+        case 4:
+            List<string> nomes = new List<string>() { "Marcelo Moura", "João Otávio", "Weber", "João Victor", "Aleixo", "Marcos Vinícius" };
+            //Console.WriteLine("Lista original:");
+            //foreach (string nome in nomes)
+            //{
+            //    Console.Write(nome);
+            //}
+            //Console.WriteLine("\n");
+            List<string> sorteados = Sorteador.SortearNomes(nomes);
+            int cont = 0;
+            Console.WriteLine("Lista após sorteio:");
+            foreach (string nome in sorteados)
+            {
+                Console.WriteLine($"Equipe {++cont}: {nome}");
+            }
+            
             break;
         default:
             Console.WriteLine("Opcao Inválida");
